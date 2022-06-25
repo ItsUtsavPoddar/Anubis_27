@@ -47,7 +47,7 @@ section{
 
 .heading{
     text-align: center;
-    color:#fff;
+    color:rgb(240, 77, 77);
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
@@ -63,7 +63,7 @@ section{
     display: inline-block;
     padding:.9rem 3rem;
     font-size: 1.7rem;
-    color:#fff;
+    color:rgb(156, 15, 15);
     background: var(--main-color);
     cursor: pointer;
 }
@@ -91,7 +91,7 @@ section{
 .header .navbar a{
     margin:0 1rem;
     font-size: 1.6rem;
-    color:#fff;
+    color:rgb(235, 179, 26);
 }
 
 .header .navbar a:hover{
@@ -101,7 +101,7 @@ section{
 }
 
 .header .icons div{
-    color:#fff;
+    color:rgb(18, 196, 228);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -118,7 +118,7 @@ section{
 .header .search-form{
     position: absolute;
     top:115%; right: 7%;
-    background: #fff;
+    background: rgb(255, 188, 3);
     width: 50rem;
     height: 5rem;
     display: flex;
@@ -156,7 +156,7 @@ section{
     top:100%; right: -100%;
     height: calc(100vh - 9.5rem);
     width: 35rem;
-    background: #fff;
+    background: rgba(180, 97, 29, 0.973);
     padding:0 1.5rem;
 }
 
@@ -208,7 +208,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(../images/home-img.jpeg) no-repeat;
+    background:url(../img/Rag\ Rug\ Weaving\ Workshop.jfif) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -220,15 +220,15 @@ section{
 .home .content h3{
     font-size: 6rem;
     text-transform: uppercase;
-    color:#fff;
+    color:rgb(243, 240, 240);
 }
 
 .home .content p{
-    font-size: 2rem;
-    font-weight: lighter;
+    font-size: 2.5rem;
+    font-weight: medium;
     line-height: 1.8;
     padding:1rem 0;
-    color:#eee;
+    color:rgb(255, 251, 251);
 }
 
 .about .row{
@@ -252,12 +252,12 @@ section{
 
 .about .row .content h3{
     font-size: 3rem;
-    color:#fff;
+    color:rgb(230, 208, 10);
 }
 
 .about .row .content p{
     font-size: 1.6rem;
-    color:#ccc;
+    color:rgb(231, 48, 48);
     padding:1rem 0;
     line-height: 1.8;
 }
@@ -275,17 +275,17 @@ section{
 }
 
 .menu .box-container .box img{
-    height: 10rem;
+    height: 20rem;
 }
 
 .menu .box-container .box h3{
-    color: #fff;
+    color: rgb(219, 24, 154);
     font-size: 2rem;
     padding:1rem 0;
 }
 
 .menu .box-container .box .price{
-    color: #fff;
+    color: rgb(204, 203, 182);
     font-size: 2.5rem;
     padding:.5rem 0;
 }
@@ -297,7 +297,7 @@ section{
 }
 
 .menu .box-container .box:hover{
-    background:#fff;
+    background:rgb(122, 209, 105);
 }
 
 .menu .box-container .box:hover > *{
@@ -322,7 +322,7 @@ section{
     line-height: 5rem;
     font-size: 2rem;
     border:var(--border);
-    color:#fff;
+    color:rgb(235, 236, 243);
     margin:.3rem;
 }
 
@@ -339,7 +339,7 @@ section{
 }
 
 .products .box-container .box .content h3{
-    color:#fff;
+    color:rgb(62, 223, 70);
     font-size: 2.5rem;
 }
 
@@ -353,7 +353,7 @@ section{
 }
 
 .products .box-container .box .content .price{
-    color:#fff;
+    color:#cde074;
     font-size: 2.5rem;
 }
 
@@ -378,7 +378,7 @@ section{
 .review .box-container .box p{
     font-size: 1.5rem;
     line-height: 1.8;
-    color:#ccc;
+    color:rgb(228, 23, 74);
     padding:2rem 0;
 }
 
@@ -392,7 +392,7 @@ section{
 .review .box-container .box h3{
     padding:1rem 0;
     font-size: 2rem;
-    color:#fff;
+    color:rgb(192, 77, 24);
 }
 
 .review .box-container .box .stars i{
@@ -422,7 +422,7 @@ section{
 .contact .row form h3{
     text-transform: uppercase;
     font-size: 3.5rem;
-    color:#fff;
+    color:rgb(28, 165, 199);
 }
 
 .contact .row form .inputBox{
