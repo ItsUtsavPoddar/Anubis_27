@@ -14,6 +14,8 @@
     z-index: 9;
 }
 
+
+
 .nav{
     padding: 10px 10vw;
     display: flex;
@@ -87,11 +89,12 @@
     padding: 0 10px;
     margin: 0 5px;
     text-decoration: none;
-    color: #383838;
-    opacity: 0.5;
-    transition: .5s;
+    color: #c70909;
+    opacity: 1.0;
+    transition: 1.5s;
 }
 
 .link:hover{
     opacity: 1;
 }
+
