@@ -11,7 +11,6 @@ The site also provides the following features:
 	
 -    Technologies: 
 	languages - HTML, CSS
-	Framework - NodeJs
 	Database -  FireStorage 
 	Hosting - Firebase
 	Platform- Web Browser (Desktop)  
