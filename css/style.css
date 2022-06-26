@@ -3,7 +3,7 @@
 :root{
     --main-color:#d3ad7f;
     --black:#13131a;
-    --bg:#010103;
+    --bg:#1a1b1b;
     --border:.1rem solid rgba(255,255,255,.3);
 }
 
@@ -62,8 +62,8 @@ section{
     margin-top: 1rem;
     display: inline-block;
     padding:.9rem 3rem;
-    font-size: 1.7rem;
-    color:rgb(156, 15, 15);
+    font-size: 2rem;
+    color:rgb(25, 109, 8);
     background: var(--main-color);
     cursor: pointer;
 }
@@ -90,8 +90,8 @@ section{
 
 .header .navbar a{
     margin:0 1rem;
-    font-size: 1.6rem;
-    color:rgb(235, 179, 26);
+    font-size: 2.0rem;
+    color:rgb(238, 196, 82);
 }
 
 .header .navbar a:hover{
@@ -101,7 +101,7 @@ section{
 }
 
 .header .icons div{
-    color:rgb(18, 196, 228);
+    color:rgb(233, 242, 243);
     cursor: pointer;
     font-size: 2.5rem;
     margin-left: 2rem;
@@ -208,7 +208,7 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(../img/Rag\ Rug\ Weaving\ Workshop.jfif) no-repeat;
+    background:url(../img/What\ made\ Otti\ Berger’s\ Bauhaus\ textile\ work\ so\ influential_.jfif) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -220,7 +220,7 @@ section{
 .home .content h3{
     font-size: 6rem;
     text-transform: uppercase;
-    color:rgb(243, 240, 240);
+    color:rgb(17, 7, 7);
 }
 
 .home .content p{
@@ -228,7 +228,7 @@ section{
     font-weight: medium;
     line-height: 1.8;
     padding:1rem 0;
-    color:rgb(255, 251, 251);
+    color:rgb(2, 7, 3);
 }
 
 .about .row{
@@ -378,7 +378,7 @@ section{
 .review .box-container .box p{
     font-size: 1.5rem;
     line-height: 1.8;
-    color:rgb(228, 23, 74);
+    color:rgb(245, 253, 245);
     padding:2rem 0;
 }
 
@@ -392,7 +392,7 @@ section{
 .review .box-container .box h3{
     padding:1rem 0;
     font-size: 2rem;
-    color:rgb(192, 77, 24);
+    color:rgb(219, 177, 157);
 }
 
 .review .box-container .box .stars i{
@@ -422,7 +422,7 @@ section{
 .contact .row form h3{
     text-transform: uppercase;
     font-size: 3.5rem;
-    color:rgb(28, 165, 199);
+    color:rgb(105, 213, 243);
 }
 
 .contact .row form .inputBox{
@@ -435,7 +435,7 @@ section{
 }
 
 .contact .row form .inputBox span{
-    color:#fff;
+    color:rgb(238, 237, 234);
     font-size: 2rem;
     padding-left: 2rem;
 }
@@ -444,7 +444,7 @@ section{
     width: 100%;
     padding:2rem;
     font-size: 1.7rem;
-    color:#fff;
+    color:rgb(240, 199, 16);
     text-transform: none;
     background:none;
 }
