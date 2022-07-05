@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script>"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"</script>
+    <style>
+      body{
+        background-color:rgb(210, 248, 248);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        margin: 0px;
+      }
+      
+    </style>
+</head>
+<body>
+  <div class = "mb-5">
+    <h3 class = "mb-3">Sign up</h3>
+    <input type="text" placeholder="FullName" id = "nameInp" class = "form-control mb-3">
+    <input type="text" placeholder="email" id = "emailInp" class = "form-control mb-3">
+    <input type="text" placeholder="UserName" id = "userInp" class = "form-control mb-3">
+    <input type="text" placeholder="Password" id = "passInp" class = "form-control mb-3">
+    <button type="text" id = "sub_btn" class = "btn btn-outline-primary mb-3">Sign Up</button>
+    <a href="login.html" class="badge badge-secondary py-1 w-100">Already have an Account</a>
+  </div>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.4/firebase-analytics.js";
+        const firebaseConfig = {
+          apiKey: "AIzaSyBzhIJ3HSMBuhA5QLEicmghYquyai8StOQ",
+          authDomain: "asdfghj-89825.firebaseapp.com",
+          databaseURL: "https://asdfghj-89825-default-rtdb.firebaseio.com",
+          projectId: "asdfghj-89825",
+          storageBucket: "asdfghj-89825.appspot.com",
+          messagingSenderId: "20838125137",
+          appId: "1:20838125137:web:385273936e07eba9e93270",
+          measurementId: "G-DTP0891RT8"
+        };
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        import { firestore } from 'https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore.js'
+        const db = getDetabase();
+
+
+
+        function Validation(){
+          let nameregex = /^[a-zA-Z]+$/;
+          let email = /^[a-zA-Z0-9]+@.\(gmail|yahoo|outlook)\.com$/;
+          let userregex= /^[a-zA-Z0-9]{5,}$/;
+          if(!nameregex.test(name.value)){
+            alert("the name should only contain alphabet");
+            return false;
+          }
+          if(!email.test(email.value)){
+            alert("enter a valid email")
+            return false;
+          }
+          if(!userregex.test(username.value))
+          {
+            alert("-username can only be alphanumeric\n - username must be atleast 5 characters\n-username cannot contain spaces");
+            return false;
+          }
+          return true;
+
+        }
+        function Registeruser(){
+          if(!Validation()){
+            return;
+          }
+          const dbRef = ref(db);
+          get(child(dbRef,"UserList/"+ username.value)).then((snapshot)=>{
+            if(snapshot.exist()){
+              alert("Account Already Exist");
+            }
+            else{
+              set(ref(db,"UserList/"+username.vlaue),{
+                fullname: name.value,
+                email: email.value,
+                username: username.vlaue,
+                password: pass.value
+
+              })
+              .then(()=>{
+                alert("user added successfully");
+              })
+              .catch(()=>{
+                alert("error" + error);
+              })
+            }
+          });
+        }
+        <submit class="addEvent"></submit>
+        
+      </script>
+      
+</body>
+</html>
